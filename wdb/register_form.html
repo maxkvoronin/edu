@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register</title>
+</head>
+<body>
+    <h1>Register</h1>
+<form>
+
+    <label for="firstname">First Name:</label>
+    <input id="firstname" name="firstname" placeholder="John" type="text" required>
+    <label for="lastname">Last Name:</label>
+    <input id="lastname" name="firstname" placeholder="Smith" type="text" required>
+
+    <div>
+        <label for="male">Male:</label>
+        <input name="gender" id="male" type="radio" value="choice_male" required>
+
+        <label for="female">Female:</label>
+        <input name="gender" id="female" type="radio" value="choice_female" required>
+
+        <label for="other">Other:</label>
+        <input name="gender" id="other" type="radio" value="choice_other" required>
+    </div>
+
+    <div>
+        <label for="email">E-Mail</label>
+        <input name="email" id="email" type="email" placeholder="your email" required>
+
+        <label for="pwd">Password:</label>
+        <input name="pwd" id="pwd" type="password" placeholder="your password" pattern=".{5,10}"
+               title="password must be between 5 to 10 characters" required>
+    </div>
+
+    <div>
+        <label for="bDay">Birthday:</label>
+        <input name="bDay" id="bDay" type="date" required>
+    </div>
+
+    <div>
+        <label for="agreed">I agree to the terms and conditions</label>
+        <input name="check" id="agreed" type="checkbox" required>
+    </div>
+
+    <input type="submit">
+
+</form>
+</body>
+</html>
